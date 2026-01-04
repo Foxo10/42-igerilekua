@@ -65,3 +65,24 @@ Este repo es una **referencia**:
 │   ├── exam01/
 │   └── final/
 └── README.md
+```
+---
+
+| Proyecto | Nota/Estado | Conceptos clave  |
+| -------- | ----------- | ---------------- |
+| Shell00  | <100% / ✅>  | Shell basics     |
+| Shell01  | <70% / ✅>   | Shell basics     |
+| C00      | <85% / ✅>   | Intro to C       |
+| C01      | <100% / ✅>  | Pointers         |
+| C02      | <85% / ✅>   | Strings/Arrays   |
+| C03      | <100% / ✅>  | String manip     |
+| C04      | <100% / ✅>  | Bases/Ints       |
+| C05      | <80% / ✅>   | Recursion/Iter   |
+| C06      | <100% / ✅>  | argc/argv        |
+| C07      | <60% / ✅>   | malloc/memory    |
+| C08      | <100% / ✅>  | headers/structs  |
+| C09      | <100% / ✅>  | makefile/libs    |
+| C10      | <N.A.>      | recreating progs |
+| C11      | <100% / ✅>  | func pointers    |
+| C12      | <N.A.>      | linked lists     |
+| C13      | <N.A.>      | trees/bst        |
