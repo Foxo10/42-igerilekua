@@ -1,0 +1,55 @@
+## Ejercicio 00
+mkdir ex00
+cd ex00
+nano z
+
+%> cat z
+
+## Ejercicio 01
+mkdir ex01
+cd ex01
+touch testShell00
+touch -t 202506012342 testShell00 
+## añadir 40 bytes, yo he añadido 40 líneas en blanco (con añadir 40 caracteres en una línea suficiente).
+## Read=4, Write=2, Execute=1 [r-- r-x r-x]
+chmod 455 testShell00
+tar -cf testShell00.tar testShell00
+
+## Ejercicio 02
+# Hard link, aumentamos la segunda columna de "ls -l", el número de enlaces
+ln test3 test5
+# Crear enlace simbólico
+ln -s test0 test6
+# Moodificar tamaño (columna 4)
+truncate -s 1 test5
+# Modificar fecha de modificacion del link simbólico, luego hay que modificar el test0 también
+touch -h -t 202506012220 test6
+# Modificar permisos
+chmod 541 test4
+
+## Ejercicio 03
+ssh-keygen
+cp ~/.ssh/id_rsa_pub.pub ex03/	
+
+## Ejercicio 05
+# tformat para que no omita el último $
+git log -n 5 --pretty=tformat:"%H"
+
+## Ejercicio 07
+patch -b a < sw.diff
+mv a b
+mv a.original a
+## comprobación
+diff a b > sw.diff
+
+## Ejercicio 09
+file -C -m ft_magic
+file -m ft_magic.mgc *
+
+
+### Correciones
+-Aplicar touch -h -t tambien al enlace simbólico.
+-Modificar permisos test4 con 641
+-Cambiar nombre y extensión de la public key a "id_rsa_pub"
+
+
