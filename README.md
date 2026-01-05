@@ -7,6 +7,7 @@
 ---
 
 ## Tabla de contenidos
+
 - [Sobre este repo](#sobre-este-repo)
 - [Reglas / Disclaimer](#reglas--disclaimer)
 - [Estructura del repositorio](#estructura-del-repositorio)
@@ -20,9 +21,11 @@
 ---
 
 ## Sobre este repo
-Breve descripción de tu Piscine:
-- Campus: <42 Urduliz>
-- Fechas: <Octubre 2025>
+
+Breve descripción de mi Piscine:
+
+- Campus: 42 Urduliz
+- Fechas: Octubre 2025
 - Lenguajes: Shell, C
 - Enfoque: aprendizaje “hands-on”, peer-to-peer
 
@@ -31,13 +34,17 @@ Breve descripción de tu Piscine:
 ---
 
 ## Reglas / Disclaimer
+
 ### No copies, aprende
+
 Este repo es una **referencia**:
+
 - Intenta resolver los ejercicios por tu cuenta primero.
 - Si te atascas, mira soluciones para **entender el enfoque**, no para “pegar y enviar”.
 - Reescribe lo aprendido y pruébalo con tus propios casos.
 
 ### Pacing (consejo de ritmo)
+
 - No te bloquees demasiado tiempo en un ejercicio.
 - Prioriza avanzar de forma constante y volver luego a lo difícil.
 - Practica exámenes con regularidad.
@@ -47,6 +54,7 @@ Este repo es una **referencia**:
 ---
 
 ## Estructura del repositorio
+
 ```txt
 .
 ├── shell-projects/
@@ -55,34 +63,114 @@ Este repo es una **referencia**:
 ├── c-projects/
 │   ├── c00/
 │   ├── c01/
-│   └── ...
+│   ├── ...
+|   └── c13/
 ├── rushes/
 │   ├── rush00/
 │   ├── rush01/
-│   └── rush02/
+|   ├── rush02/
+│   └── bsq/
 ├── exams/
 │   ├── exam00/
 │   ├── exam01/
 │   └── final/
 └── README.md
 ```
+
 ---
 
-| Proyecto | Nota/Estado | Conceptos clave  |
-| -------- | ----------- | ---------------- |
-| Shell00  | <100% / ✅>  | Shell basics     |
-| Shell01  | <70% / ✅>   | Shell basics     |
-| C00      | <85% / ✅>   | Intro to C       |
-| C01      | <100% / ✅>  | Pointers         |
-| C02      | <85% / ✅>   | Strings/Arrays   |
-| C03      | <100% / ✅>  | String manip     |
-| C04      | <100% / ✅>  | Bases/Ints       |
-| C05      | <80% / ✅>   | Recursion/Iter   |
-| C06      | <100% / ✅>  | argc/argv        |
-| C07      | <60% / ✅>   | malloc/memory    |
-| C08      | <100% / ✅>  | headers/structs  |
-| C09      | <100% / ✅>  | makefile/libs    |
-| C10      | <N.A.>      | recreating progs |
-| C11      | <100% / ✅>  | func pointers    |
-| C12      | <N.A.>      | linked lists     |
-| C13      | <N.A.>      | trees/bst        |
+## Estado de proyectos
+
+| Proyecto | Nota/Estado  | Conceptos clave  |
+| :------: | :----------: | :--------------: |
+| Shell00  | <10/10 / ✅> |   Shell basics   |
+| Shell01  |  <5/8 / ✅>  |   Shell basics   |
+|   C00    |  <8/8 / ✅>  |    Intro to C    |
+|   C01    |  <9/9 / ✅>  |     Pointers     |
+|   C02    | <12/13 / ✅> |  Strings/Arrays  |
+|   C03    |  <6/6 / ✅>  |   String manip   |
+|   C04    |  <4/6 / ✅>  |    Bases/Ints    |
+|   C05    |  <8/9 / ✅>  |  Recursion/Iter  |
+|   C06    |  <4/4 / ✅>  |    argc/argv     |
+|   C07    |  <5/6 / ✅>  |  malloc/memory   |
+|   C08    |  <0/6 / ❌>  | headers/structs  |
+|   C09    |  <0/3 / ❌>  |  makefile/libs   |
+|   C10    |  <0/4 / ❌>  | recreating progs |
+|   C11    |  <0/8 / ❌>  |  func pointers   |
+|   C12    | <0/18 / ❌>  |   linked lists   |
+|   C13    |  <0/8 / ❌>  |    trees/bst     |
+
+> ✅ = completado / entregado  
+> ❌ = pendiente / por rehacer
+
+---
+
+## Highlights
+
+Cosas que más me han aportado / de las que estoy más orgulloso:
+
+- **<Proyecto/ejercicio>** — qué aprendí (debug, punteros, memoria, Makefiles, etc.)
+- **<Proyecto/ejercicio>** — dificultad principal y cómo la resolví
+- **<Rush/Exam>** — estrategia y puntos clave
+
+---
+
+## Tips & Tricks
+
+### Reglas que me han funcionado
+
+- **Compila siempre con flags** (y cuanto antes):
+  - `-Wall -Wextra -Werror`
+- Haz tests pequeños y repetibles (casos límite incluidos).
+- Si te atascas, vuelve al enunciado y escribe tu propio mini-checklist.
+
+### Debug rápido (mini checklist)
+
+- ¿Segfault? revisa punteros `NULL`, índices, `malloc/free`, tamaños.
+- ¿Resultado raro? imprime valores intermedios (`printf`) y reduce el caso.
+- ¿Norm/style? arregla primero lo “mecánico” y luego la lógica.
+
+---
+
+## Exam Tips
+
+### Antes del examen
+
+- Ten atajos listos (editor, navegación, copiar/pegar, búsqueda).
+- Practica con tiempo: **haz simulacros**.
+- Prioriza ejercicios “seguros” primero para sumar puntos rápido.
+
+### Durante el examen
+
+- Lee el enunciado 2 veces.
+- Empieza por lo que sabes resolver al 100%.
+- Prueba con inputs raros (vacío, 1 char, tamaños grandes).
+- Si algo falla, minimiza el caso y depura con calma.
+
+### Después
+
+- Si el ejercicio era reutilizable, anota el patrón (para futuros exams).
+- Actualiza tu repo con lo aprendido (sin copiar “tal cual”, entiende y reescribe).
+
+---
+
+## Recursos
+
+- **Man pages:** `man strlen`, `man malloc`, `man write`, etc.
+- **C cheatsheet personal:** `<ruta/archivo>`
+- **Tests:** `<ruta/carpeta>`
+- **Notas:** `<ruta/carpeta o wiki>`
+
+---
+
+## Créditos
+
+- Gracias a evaluadores/as y compañeros/as de la Piscine por el feedback.
+- Inspiración de formato/estructura: repos públicos de Piscine (ver referencias en el README).
+
+---
+
+## License
+
+Este repositorio es para fines educativos.  
+Si vas a reutilizar contenido, **menciona la fuente** y úsalo de forma responsable.
